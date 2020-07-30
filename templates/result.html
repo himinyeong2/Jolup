@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Overflow by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Overflow by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="/static/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Header -->
+    
+
+    <!-- Feature 1 -->
+    <article id="first" class="container box style1 right">
+        <a href="#" class="image fit"><img src="/static/images/pic01.jpg" alt="" /></a>
+        <div class="inner">
+            <header>
+                <h2>전필</h2>
+            </header>
+            <p>{{my.junpil}}/{{jolup.junpil}}</p>
+            {% if my.junpil >= jolup.junpil %}
+            <p>PASS</p>
+            {% else%}
+            <p>NON-PASS</p>
+            {%endif%}
+            {% if my.junpil < jolup.junpil %}
+            <a>{{jolup.junpil - my.junpil }}학점이 남았습니다!! </a>
+            {%endif%}
+        </div>
+    </article>
+
+    <!-- Feature 2 -->
+    <article class="container box style1 left">
+        <a href="#" class="image fit"><img src="/static/images/pic02.jpg" alt="" /></a>
+        <div class="inner">
+            <header>
+                <h2>전선</h2>
+            </header>
+            <p>{{my.junsun}}/{{jolup.junsun}}</p>
+            {% if my.junsun >= jolup.junsun %}
+            <p>PASS</p>
+            {% else%}
+            <p>NON-PASS</p>
+            {%endif%}
+            {% if my.junsun < jolup.junsun %}
+            <a>{{jolup.junsun - my.junsun }}학점이 남았습니다!! </a>
+            {%endif%}
+        </div>
+    </article>
+
+       <!-- Feature 2 -->
+    <article class="container box style1 right">
+        <a href="#" class="image fit"><img src="/static/images/pic01.jpg" alt="" /></a>
+        <div class="inner">
+            <header>
+                <h2>기교</h2>
+            </header>
+            <p>{{my.gigyo}}/{{jolup.gigyo}}</p>
+            {% if my.gigyo >= jolup.gigyo %}
+            <p>PASS</p>
+            {% else %}
+            <p>NON-PASS</p>
+            {%endif%}
+            {% if my.gigyo < jolup.gigyo %}
+            <a>{{jolup.gigyo - my.gigyo }}학점이 남았습니다!! </a>
+            {%endif%}
+        </div>
+    </article>
+   
+   
+       <!-- Feature 2 -->
+    <article class="container box style1 left">
+        <a href="#" class="image fit"><img src="/static/images/pic02.jpg" alt="" /></a>
+        <div class="inner">
+            <header>
+                <h2>교필</h2>
+            </header>
+            <p>{{my.gyopil}}/{{jolup.gyopil}}</p>
+            {% if my.gyopil >= jolup.gyopil %}
+            <p>PASS</p>
+            {% else%}
+            <p>NON-PASS</p>
+            {%endif%}
+            {% if my.gyopil < jolup.gyopil %}
+            <a>{{jolup.gyopil - my.gyopil }}학점이 남았습니다!! </a>
+            {%endif%}
+        </div>
+    </article>
+    
+        <!-- Feature 2 -->
+    <article class="container box style1 right">
+        <a href="#" class="image fit"><img src="/static/images/pic01.jpg" alt="" /></a>
+        <div class="inner">
+            <header>
+                <h2>교선</h2>
+            </header>
+            <p>{{my.gyosun}}/{{jolup.gyosun}}</p>
+            {% if my.gyosun >= jolup.gyosun %}
+            <p>PASS</p>
+            {% else %}
+            <p>NON-PASS</p>
+            {%endif%}
+            {% if my.gyosun < jolup.gyosun %}
+            <a>{{jolup.gyosun - my.gyosun }}학점이 남았습니다!! </a>
+            {%endif%}
+        </div>
+    </article>
+    <!-- Portfolio -->
+    <article class="container box style2">
+        <header>
+           {%if my.gyosun >= jolup.gyosun and my.gyopil >= jolup.gyopil and my.gigyo >= jolup.gigyo and my.junsun >= jolup.junsun and my.junpil >= jolup.junpil %}
+            <h2>졸업 가능</h2>
+            {%else%}
+            <h2>졸업 불가</h2>
+            {%endif%}
+            <p>{{my.gyosun+my.gyopil+my.gigyo+my.junsun+my.junpil}}/130</p>
+            
+        </header>
+        <div class="inner gallery">
+            <div class="row gtr-0">
+                <div class="col-3 col-12-mobile"><a href="/static/images/fulls/01.jpg" class="image fit"><img src="/static/images/thumbs/01.jpg" alt="" title="Ad infinitum" /></a></div>
+                <div class="col-3 col-12-mobile"><a href="/static/images/fulls/02.jpg" class="image fit"><img src="/static/images/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
+                <div class="col-3 col-12-mobile"><a href="/static/images/fulls/03.jpg" class="image fit"><img src="/static/images/thumbs/03.jpg" alt="" title="Raven" /></a></div>
+                <div class="col-3 col-12-mobile"><a href="/static/images/fulls/04.jpg" class="image fit"><img src="/static/images/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>
+            </div>
+            <div class="row gtr-0">
+                <div class="col-3 col-12-mobile"><a href="/static/images/fulls/05.jpg" class="image fit"><img src="/static/images/thumbs/05.jpg" alt="" title="Cherish" /></a></div>
+                <div class="col-3 col-12-mobile"><a href="/static/images/fulls/06.jpg" class="image fit"><img src="/static/images/thumbs/06.jpg" alt="" title="Different." /></a></div>
+                <div class="col-3 col-12-mobile"><a href="/static/images/fulls/07.jpg" class="image fit"><img src="/static/images/thumbs/07.jpg" alt="" title="History was made here" /></a></div>
+                <div class="col-3 col-12-mobile"><a href="/static/images/fulls/08.jpg" class="image fit"><img src="/static/images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
+            </div>
+        </div>
+    </article>
+
+
+
+    <!-- Scripts -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery.scrolly.min.js"></script>
+    <script src="/static/js/jquery.poptrox.min.js"></script>
+    <script src="/static/js/browser.min.js"></script>
+    <script src="/static/js/breakpoints.min.js"></script>
+    <script src="/static/js/util.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
